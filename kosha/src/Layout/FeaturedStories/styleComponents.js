@@ -5,7 +5,7 @@ export const ImageGrid = styled.div `
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
-    gap: 10px;
+    gap: 0px;
     border-radius: 10px;
     overflow: hidden;
 `;
