@@ -18,19 +18,22 @@ import { ImageGrid, Title, Image, ImageContainer, ImageOverlay, ImageSubtitle, I
 //         </ImageGrid>
 //     );
 // };
-const imagess = [{ picture: Cart, Title: "", Subtitle: "" }, { picture: Cart, Title: "", Subtitle: "" }, { picture: Cart, Title: "", Subtitle: "" }, { picture: Cart, Title: "", Subtitle: "" }, { picture: Cart, Title: "", Subtitle: "" }];
+const images = [{ picture: Cart, Title: "Case The Studios", Subtitle: "Producers of the month" },
+{ picture: Grad, Title: "Case The Fashion", Subtitle: "Fashion brands of the month" },
+{ picture: Red, Title: "Case The Baddie", Subtitle: "Baddies Of The Month" },
+{ picture: Stage, Title: "Case The Staff", Subtitle: "Meet The Team" }];
 
-const images = [Cart, Grad, Red, Stage];
+// const images = [Cart, Grad, Red, Stage];
 
 const FeatureStories = () => {
     return (
         <ImageGrid>
             {images.map((image, index) => (
                 <ImageContainer key={index}>
-                    <Image src={image} alt="placeholder" />
+                    <Image src={image.picture} alt="placeholder" />
                     <ImageOverlay>
-                        <ImageTitle>Case The Baddie</ImageTitle>
-                        <ImageSubtitle>Top 10 baddies of the month</ImageSubtitle>
+                        <ImageTitle>{image.Title}</ImageTitle>
+                        <ImageSubtitle>{image.Subtitle}</ImageSubtitle>
                     </ImageOverlay>
                 </ImageContainer>
             ))}
