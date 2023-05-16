@@ -3,6 +3,7 @@ import Nav from "./Layout/Nav";
 import "./App.css";
 import Hero from "./Layout/Hero";
 import FeatureStories from "./Layout/FeaturedStories";
+import Interviews from "./Layout/Interviews";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Nav />
       <Hero />
       <FeatureStories />
+      <Interviews />
     </>
   );
 }
