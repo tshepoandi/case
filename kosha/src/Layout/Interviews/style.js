@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const Heading = styled.h1 `
     color:white;
-    font-size: 3em;
-    margin-left: 1em;
+    font-size: 4em;
+    // margin-left: 1em;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const VideoContainer = styled.div `
