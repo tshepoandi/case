@@ -20,3 +20,7 @@ export const VideoElement = styled.video `
 width: 100%;
 height: auto;
 `;
+
+export const SubtitleText = styled.p`
+    color:white;
+`

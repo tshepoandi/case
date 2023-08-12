@@ -4,6 +4,8 @@ import "./App.css";
 import Hero from "./Layout/Hero";
 import FeatureStories from "./Layout/FeaturedStories";
 import Interviews from "./Layout/Interviews";
+import Reviews from "./Layout/Reviews";
+
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Hero />
       <FeatureStories />
       <Interviews />
+      <Reviews/>
+      
     </>
   );
 }
